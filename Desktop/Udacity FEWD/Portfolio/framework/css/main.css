@@ -5,63 +5,67 @@
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 575px) {
-	.row {
-		flex-direction: column;
-	}
-
-	.col-4 {
-		width: 100%;
-	}
-}
-
-
 .row {
 	width: 80%;
-	display: flex; flex-wrap: wrap;
+	display: flex; 
+	flex-wrap: wrap;
 	margin-right: 5%;
 	margin-left: 5%;
 }
+
 .col-1 {
 	width: 8.33%;
 }
+
 .col-2 {
 	width: 16.66%
 }
+
 .col-3 {
 	width: 25%;
 }
+
 .col-4 {
 	width: 33.33%;
 }
+
 .col-5 {
 	width: 41.66%;
 }
+
 .col-6 {
 	width: 50%;
 }
+
 .col-7 {
 	width: 58.33%;
 }
+
 .col-8 {
 	width: 66.66%;
 }
+
 .col-9 {
 	width: 75%;
 }
+
 .col-10 {
 	width: 83.33%;
 }
+
 .col-11 {
 	width: 91.55%;
 }
+
 .col-12 {
 	width: 100%;
 }
 
 .img-ulogo {
 	padding-left: 20px;
-	max-width: 120px;
+	max-height: 80px;
+	max-width: 100%;
+
 }
 
 .img-robot {
@@ -78,7 +82,7 @@
 }
 
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 40px;
 	float: right;
 	line-height: 5%;
@@ -86,7 +90,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 20px;
 	float: right;
 	clear: right;
@@ -96,24 +100,147 @@ h2 {
 }
 
 h3 {
-	font-family: 'Raleway', sans-serif;
-	color: #BCBBBB;
+	font-family: "Raleway", sans-serif;
+	color: #bcbbbb;
 	padding-left: 20px;
 
 }
 
 h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: #747474;
+	font-size: 1.25em;
 	text-align: center;
 }
 
 hr {
-	color: #BCBBBB;
+	color: #bcbbbb;
 	height: 2px;
 	margin-right: 20px;
 	margin-left: 20px;
 }
 
+p {
+	font-family: "Raleway", sans-serif;
+	color: #4d4d4d;
+	padding-left: 20px;
+
+}
+
+@media screen and (max-width: 445px) {
+	.row-1 {
+		display: flex;
+		}
+
+	.title {
+		display: none;
+	}
+
+	.name {
+		font-size: 30px;
+	}
+
+	.row-3 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h3 {
+		padding-left: 0px;
+	}
+
+	.col-4 {
+		width: 80%;
+	}
+
+	.img-work {
+		width: 40%;
+		float: left;
+		clear: right;
+	}
+
+	h4 {
+		float: left;
+		clear: left;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (min-width: 446px) and (max-width: 576px) {
+	.row-1 {
+		display: flex;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.name {
+		font-size: 40px;
+	}
+
+	.row-3 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h3 {
+		padding-left: 0px;
+	}
+
+	.col-4 {
+		width: 80%;
+	}
+
+	.img-work {
+		width: 40%;
+		float: left;
+		clear: right;
+	}
+
+	h4 {
+		float: left;
+		clear: left;
+		padding-left: 20px;
+		font-size: 16px;
+	}
+
+	p {
+		padding-left: 40px;
+	}
+}
+
+@media screen and (min-width: 577px) and (max-width: 780px) {
+	.row {
+		width: 100%;
+	}
+
+	.row-1 {
+		display: flex;
+	}
+
+	.row-3 {
+		display: flex;
+		align-items: space-between;
+	}
+
+	h3 {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (min-width: 781px) {
+	.row, .row-1, .row-2, .row-3, .header, .content {
+		width: 780px;
+		display: flex;
+		align-content: center;
+	}
+}
 
 
